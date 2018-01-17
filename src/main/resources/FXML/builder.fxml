@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lazyinstanziator.builderFXCOntroller">
+   <children>
+      <StackPane layoutX="1.0" layoutY="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="264.0" prefWidth="600.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="441.0" layoutX="4.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" width="592.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="3.0">
+                     <fill>
+                        <RadialGradient centerX="0.48876404494382025" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#04f2f275" />
+                              <Stop color="#04f2f275" offset="0.00749063670411985" />
+                              <Stop color="#23d7d175" offset="0.49044754662732204" />
+                              <Stop color="#0ea87f75" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </fill></Rectangle>
+               </children>
+            </AnchorPane>
+            <AnchorPane>
+               <children>
+                  <TextArea fx:id="area" layoutX="32.0" layoutY="261.0" prefHeight="172.0" prefWidth="539.0" />
+                  <HBox layoutX="169.0" layoutY="92.0" prefHeight="115.0" prefWidth="312.0" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="119.0" AnchorPane.topAnchor="92.0">
+                     <children>
+                        <VBox prefHeight="115.0" prefWidth="125.0" spacing="5.0">
+                           <children>
+                              <Label prefHeight="22.0" prefWidth="168.0" text="Accesyble role" textFill="#550dd6">
+                                 <font>
+                                    <Font name="FreeSans" size="13.0" />
+                                 </font></Label>
+                              <Label prefHeight="26.0" prefWidth="171.0" text="Javafx property" textFill="#550dd6">
+                                 <font>
+                                    <Font name="FreeSans" size="13.0" />
+                                 </font></Label>
+                              <Label prefHeight="25.0" prefWidth="174.0" text="Shadowtype field" textFill="#550dd6">
+                                 <font>
+                                    <Font name="FreeSans" size="13.0" />
+                                 </font></Label>
+                              <Label prefHeight="25.0" prefWidth="172.0" text="Name" textFill="#550dd6">
+                                 <font>
+                                    <Font name="FreeSans" size="13.0" />
+                                 </font></Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="127.0" prefWidth="191.0" spacing="5.0">
+                           <children>
+                              <TextField fx:id="accesiblerole" />
+                              <TextField fx:id="javafxproperty" />
+                              <TextField fx:id="shadowtype" />
+                              <TextField fx:id="name" />
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Button layoutX="224.0" layoutY="224.0" mnemonicParsing="false" onAction="#clear" text="Clear" />
+                  <Label layoutX="150.0" layoutY="35.0" text="JAVAFX LAZY INSTANZIATOR" textAlignment="CENTER" textFill="#e80000">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="325.0" layoutY="224.0" mnemonicParsing="false" onAction="#copy" text="Copy" />
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

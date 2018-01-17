@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="447.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lazyinstanziator.DaoController">
+   <children>
+      <StackPane prefHeight="447.0" prefWidth="600.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#217c73" height="447.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="423.0" stroke="#ed0707" strokeType="INSIDE" strokeWidth="5.0" width="580.0" />
+            <AnchorPane prefHeight="447.0" prefWidth="600.0">
+               <children>
+                  <HBox layoutX="36.0" layoutY="30.0" prefHeight="25.0" prefWidth="259.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="363.0" text="ClassName :" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="field" prefHeight="25.0" prefWidth="381.0" />
+                     </children>
+                  </HBox>
+                  <TextArea fx:id="area" layoutX="36.0" layoutY="101.0" prefHeight="320.0" prefWidth="537.0" />
+                  <JFXButton fx:id="copy" buttonType="RAISED" layoutX="447.0" layoutY="67.0" onAction="#copy" ripplerFill="WHITE" text="Copy" />
+                  <JFXButton fx:id="clear" buttonType="RAISED" layoutX="108.0" layoutY="66.0" onAction="#clear" ripplerFill="WHITE" text="Clear" />
+                  <HBox layoutX="321.0" layoutY="30.0" prefHeight="25.0" prefWidth="252.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="31.0" prefWidth="117.0" text="IdType" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="idtype" prefHeight="25.0" prefWidth="140.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lazyinstanziator.mainFXController">
+   <tabs>
+      <Tab closable="false" text="POJO">
+         <content>
+            <AnchorPane fx:id="pojoanc" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="600.0" />
+         </content>
+      </Tab>
+      <Tab closable="false" text="E&amp;HASH">
+        <content>
+          <AnchorPane fx:id="ehash" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </Tab>
+      <Tab closable="false" text="JPAC">
+        <content>
+          <AnchorPane fx:id="JPAC" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </Tab>
+      <Tab closable="false" text="DAO">
+        <content>
+          <AnchorPane fx:id="daoanc" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </Tab>
+   </tabs>
+</TabPane>
